@@ -55,5 +55,12 @@ html {
 /* ---------------Header Styles----------------- */
 header.primary {
   background-color:aquamarine;
-  
+  color:#ffffff;
+  text-align:center;
+  text-shadow: 2px 2px #000000;
+}
+
+header.primary a{
+  color:white
+  text-decoration:none;
 }
