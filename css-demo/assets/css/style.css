@@ -43,24 +43,62 @@ html {
 
 /* ---------------Global Styles----------------- */
  body {
-   font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" <width>;
+   font-family: "Rubik", sans-serif;
+   margin:0;
 
- }
+  }
+
 
 /* ---------------Header Styles----------------- */
 header.primary {
   background-color:aquamarine;
   color:#ffffff;
   text-align:center;
-  text-shadow: 2px 2px #000000;
+  text-shadow:2px 2px #00000;
+  /*longform */
+  padding-top: 40px;
+  padding-right:: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  /* Single Value */
+  padding:40px;
+  /* T/R/B/L */
+  padding: 40px 40px 40px 40px;
+  /* T/RB | L/R */
+  padding: 40px 20px;
 }
 
 header.primary a{
   color:white
   text-decoration:none;
+}
+
+
+header.primary h1 {
+  font-size:  2.4rem;
+  margin: 0;
+  
+}
+
+header.primary p.subtitle{
+  font-size:  1.3rem;
+  margin: 10px 0;
+  letter-spacing: 2px;
+}
+
+nav.primary ul {
+  padding: 0;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+}
+
+nav.primary ul li {
+  list-style-type: none;
+}
+
+nav.primary ul li a {
+  background-color:rgba(0,0,0,.5);
+  padding:5px 7.5px;
+  border: 1px solid #000000;
 }
