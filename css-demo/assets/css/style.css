@@ -7,8 +7,17 @@ html {
 *:after {
   box-sizing: inherit;
 }
-
+/* --------------Responsive Image  ---------------- */
+mg {
+  max-width: 100%;
+}
 /* --------------Utility Classes ---------------- */
+.container{
+  max-width: 960px;
+  width:80vw;
+  margin: 20px auto;
+}
+
 
 /* Skip link utility: hidden until focused */
 .visually-hidden {
@@ -113,21 +122,44 @@ nav.primary ul li a:hover{
   background-color: rgba(0,0,0,.8);
 }
 
+#content h2{
+  color:aquamarine;
+  border-bottom: 1px solid #c0c0c0;
+}
+
+#content p{
+  line-height: 1.6;
+}
 
 
+#blog{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
 
+figure{
+  margin:0;
+}
 
 /* Media Queries */
 
 @media screen and (max-width:500px) {
 
-nav.primary ul{
+
+  .container{
+  max-width: 960px;
+  width:80vw;
+}
+nav.primary ul {
   flex-direction:column;
   justify-content:space-around;
-  gap:20px};
+  gap:20px;
 }
 
   nav.primary a{
     display:block;
 
   }
+}
