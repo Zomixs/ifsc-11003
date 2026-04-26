@@ -315,7 +315,9 @@ footer.primary{
  text-align:center;
  text-shadow:1px 1px #000000;
 }
-
+footer.primary a {
+  color: #ffffff;
+}
 
 
 
@@ -355,7 +357,6 @@ nav.primary ul li{
   
 nav.primary a{
     display:block;
-  }  
-  
-  
 }
+
+
