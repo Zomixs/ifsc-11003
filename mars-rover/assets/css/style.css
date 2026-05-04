@@ -1,0 +1,219 @@
+/* ---------------Color Theme-----------------
+#F28D52 - accent orange
+#D96B43 - heading orange
+#593122 - footer brown
+#8C3C2A - nav hover base
+#F2F2F2 - light text
+*/
+
+/* ---------------Box Sizing----------------- */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* ---------------Responsive Images----------------- */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ---------------Utility Classes----------------- */
+
+.container {
+  width: 80vw;
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+/* ---------------Body Styles----------------- */
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  background: #0b0f17;
+  color: #e5e7eb;
+}
+
+/* ---------------Header Styles----------------- */
+
+header.primary {
+  background-color: #000;
+  text-align: center;
+  color: #fff;
+  padding: 6em 2em;
+  position: relative;
+  overflow: hidden;
+}
+
+header.primary::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("https://cdn.mos.cms.futurecdn.net/ToLGDWjMRMYMHHpXD6CJAH-650-80.jpg.webp");
+  background-size: cover;
+  opacity: 0.35;
+  transform: scale(1.1);
+}
+
+header.primary::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4), #0b0f17);
+}
+
+header.primary * {
+  position: relative;
+  z-index: 2;
+}
+
+header.primary h1 a {
+  display: inline-block;
+  width: 180px;
+  height: 60px;
+  background: url("https://assets.codepen.io/7248/nasa-opt.webp") center/contain no-repeat;
+  text-indent: -9999px;
+}
+
+header.primary h2 {
+  font-family: "Goldman", cursive;
+  margin-top: 10px;
+  color: #9ca3af;
+}
+
+/* ---------------Navigation----------------- */
+
+header.primary nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 0;
+  margin: 20px auto;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+header.primary nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 50px;
+  background: rgba(255,255,255,0.08);
+  transition: 0.3s ease;
+}
+
+header.primary nav a:hover {
+  background: #ff4c3b;
+  transform: translateY(-2px);
+}
+
+/* ---------------Content Section----------------- */
+
+section#content {
+  padding: 4em 0;
+}
+
+section#content h2 {
+  font-family: "Goldman", cursive;
+  color: #D96B43;
+}
+
+section#content p {
+  color: #cbd5e1;
+}
+
+/* ---------------Rover Articles----------------- */
+
+section#articles {
+  background: #0b0f17;
+}
+
+section#articles .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-bottom: 4em;
+  border-bottom: 1px solid #333;
+}
+
+section#articles h2 {
+  flex: 0 0 100%;
+  text-align: center;
+  color: #fff;
+  font-family: "Goldman", cursive;
+}
+
+#articles article.post {
+  flex: 1 1 280px;
+  background: #111827;
+  border-radius: 14px;
+  padding: 15px;
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: 0.3s ease;
+}
+
+#articles article.post:hover {
+  transform: translateY(-6px);
+  border-color: #3ea6ff;
+}
+
+#articles .post a {
+  color: #F28D52;
+  text-decoration: none;
+}
+
+#articles ul {
+  padding-left: 20px;
+  color: #9ca3af;
+}
+
+/* ---------------Hero Section----------------- */
+
+#hero {
+  padding: 4em 0;
+  text-align: center;
+}
+
+/* ---------------Sidebar----------------- */
+
+aside[role="complementary"] {
+  background: #0f172a;
+  color: #fff;
+  padding: 2.5em;
+}
+
+aside .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+aside article.widget {
+  flex: 1;
+  background: #111827;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.widget.overview table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+}
+
+/* ---------------Footer----------------- */
+
+footer#colophon {
+  background: #000;
+  color: #9ca3af;
+  text-align: center;
+  padding: 2rem;
+}
