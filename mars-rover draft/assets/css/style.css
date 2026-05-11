@@ -57,7 +57,7 @@ header.primary::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("https://cdn.mos.cms.futurecdn.net/ToLGDWjMRMYMHHpXD6CJAH-650-80.jpg.webp");
+  background-image: url("/mars-rover/assets/img/ToLGDWjMRMYMHHpXD6CJAH-650-80.jpg.webp");
   background-size: cover;
   opacity: 0.35;
   transform: scale(1.1);
